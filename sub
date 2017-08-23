@@ -1,0 +1,9 @@
+#!/bin/bash
+
+count=`ls -1 $1 | wc -l`
+if [ $count == 0 ]; then 
+	cat /home/dennis/Documents/Competitive\ Coding/codeforces/\#define.cpp > $1
+	`subl $1:49:2`
+elif [ $count == 1 ]; then
+	`subl $1`
+fi
